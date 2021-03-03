@@ -10,7 +10,7 @@ DIRECTORIES = {
     "Documents": [".oxps", ".epub", ".pages", ".docx", ".doc", ".fdf", ".ods", 
                   ".odt", ".pwi", ".xsn", ".xps", ".dotx", ".docm", ".dox", 
                   ".rvg", ".rtf", ".rtfd", ".wpd", ".xls", ".xlsx", ".ppt", 
-                  "pptx"], 
+                  ".pptx"], 
     "Archives": [".a", ".ar", ".cpio", ".iso", ".tar", ".gz", ".rz", ".7z", 
                  ".dmg", ".rar", ".xar", ".zip"], 
     "Audio": [".aac", ".aa", ".aac", ".dvf", ".m4a", ".m4b", ".m4p", ".mp3", 
