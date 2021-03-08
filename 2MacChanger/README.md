@@ -17,5 +17,5 @@ Use the script to change the MAC-Address of an interface by :
   
 For help :
 
-    python macChanger.py --help  OR  python macChanger.py -h 
+    python macChanger.py --help 
 <hr>
