@@ -9,13 +9,13 @@ Change the MAC address of an interface.
 
         wlp2s0: flags= ---------
     
-    Here options like 'enp3s0' denote interface and 'ether' denote mac-address of that interface.
+    Here, options like 'enp3s0' denote interface and 'ether' denote mac-address of that interface.
 <hr>
-Use the script to change the MAC-Address of interface by :
+Use the script to change the MAC-Address of an interface by :
   
     python macChanger.py -i 'INTERFACE NAME HERE' -m 'NEW MAC ADDRESS HERE'
   
 For help :
 
-    python macChanger.py --help
+    python macChanger.py --help  OR  python macChanger.py -h 
 <hr>
