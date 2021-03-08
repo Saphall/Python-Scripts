@@ -16,6 +16,6 @@ Use the script to change the MAC-Address of interface by :
     python macChanger.py -i 'INTERFACE NAME HERE' -m 'NEW MAC ADDRESS HERE'
   
 For help :
-  
+
     python macChanger.py --help
 <hr>
