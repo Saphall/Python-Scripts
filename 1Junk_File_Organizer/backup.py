@@ -3,7 +3,7 @@ import os
 
 DIRECTORIES = {
       "Html": [".html5", ".html", ".htm", ".xhtml"], 
-    "Images": [".jpeg", ".jpg", ".tiff", ".gif", ".bmp", ".png", ".bpg", "svg", 
+    "Images": [".jpeg", ".jpg", ".tiff", ".gif", ".bmp", ".png", ".bpg", ".svg", 
                ".heif", ".psd"], 
     "Videos": [".avi", ".flv", ".wmv", ".mov", ".mp4", ".webm", ".vob", ".mng", 
                ".qt", ".mpg", ".mpeg", ".3gp"], 
