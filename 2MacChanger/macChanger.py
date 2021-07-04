@@ -21,9 +21,12 @@ def get_arguments():
 
 def mac_changer(interface, mac):
     print('\033[1mChanging MAC address for '+interface+' to '+mac+'.\033[0m')
-    subprocess.call(['sudo', 'ifconfig', interface, 'down'])
-    subprocess.call(['sudo', 'ifconfig', interface, 'hw', 'ether', mac])
-    subprocess.call(['sudo', 'ifconfig', interface, 'up'])
+    try:
+        subprocess.call(['sudo', 'ifconfig', interface, 'down'])
+        subprocess.call(['sudo', 'ifconfig', interface, 'hw', 'ether', mac])
+        subprocess.call(['sudo', 'ifconfig', interface, 'up'])
+    except:
+        print('\033[91m\n[-] Interface error.\033[0m')
     print('\nTask Complete.')
 
 
@@ -45,15 +48,20 @@ def get_current_mac(interface):
 # interface = 'enp3s0'
 options = get_arguments()
 
-
-current_mac = get_current_mac(options.interface)
-print("\033[1m\nCurrent MAC = "+str(current_mac)+'\033[0m')
+try:
+    current_mac = get_current_mac(options.interface)
+    print("\033[1m\nCurrent MAC = "+str(current_mac)+'\033[0m')
+except:
+    print('\033[91m\n[-] Interface error.\n\033[0m')
 
 mac_changer(options.interface, options.mac)
 
-current_mac = get_current_mac(options.interface)
-if current_mac == options.mac:
-    print('\033[92m\n[+] MAC address was successfully changed to ' +
-          current_mac+'\033[0m\n')
-else:
-    print('\033[91m\n[-] MAC address did not change.\033[0m\n')
+try:
+    current_mac = get_current_mac(options.interface)
+    if current_mac == options.mac:
+        print('\033[92m\n[+] MAC address was successfully changed to ' +
+              current_mac+'\033[0m\n')
+    else:
+        print('\033[91m\n[-] MAC address did not change.\033[0m\n')
+except:
+    print('\033[91m\n[-] MAC address did not change. Check interface.\n\033[0m')
