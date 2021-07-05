@@ -13,7 +13,7 @@
 
 - [x] File organizer.
 - [x] Mac Changer.
-- [ ] Network Scanner.
+- [x] Network Scanner.
 - [ ] ARP Spoofer.
 - [ ] Packert Sniffer.
 - [ ] DNS Spoofer.
