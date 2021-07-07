@@ -15,7 +15,7 @@
 - [x] Mac Changer.
 - [x] Network Scanner.
 - [x] ARP Spoofer.
-- [x] Packet Sniffer.
+- [x] Packet Sniffer(HTTP).
 - [ ] DNS Spoofer.
 - [ ] File Interceptor.
 - [ ] Code Injector.
